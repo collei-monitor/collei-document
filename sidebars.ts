@@ -33,6 +33,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'agent/install',
         'agent/configuration',
+        'agent/script-reference',
       ],
     },
     'faq',

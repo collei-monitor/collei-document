@@ -119,6 +119,10 @@ collei-agent run --config /path/to/agent.yaml --reg-token YOUR_TOKEN
 
 ## 更新
 
+:::tip
+一般情况下，Agent 会自动检查更新并在面板的审计日志中提示Agent已经升级的版本，或者在`远程执行`中使用下发`升级 Agent`命令的方式触发Agent更新。
+:::
+
 ### Linux
 
 ```bash
