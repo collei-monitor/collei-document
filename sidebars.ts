@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'agent/install',
+        'agent/docker',
         'agent/configuration',
         'agent/script-reference',
       ],
