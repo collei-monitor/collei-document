@@ -53,8 +53,9 @@ services:
       - HOST_SYS=/host/sys
       - HOST_ETC=/host/etc
       - COLLEI_URL=${COLLEI_URL}
-      - COLLEI_REG_TOKEN=${COLLEI_REG_TOKEN:-}
-      - COLLEI_TOKEN=${COLLEI_TOKEN:-}
+      - COLLEI_REG_TOKEN=${COLLEI_REG_TOKEN}
+      - COLLEI_TOKEN=${COLLEI_TOKEN}
+      - COLLEI_NAME=${COLLEI_NAME:-}
 
 volumes:
   collei-config:
@@ -67,6 +68,7 @@ volumes:
 ```env
 COLLEI_URL=https://your-panel.example.com
 COLLEI_REG_TOKEN=your_registration_token
+# COLLEI_NAME=My Server  # 可选，服务器显示名称
 ```
 
 或使用被动注册模式：
@@ -74,6 +76,7 @@ COLLEI_REG_TOKEN=your_registration_token
 ```env
 COLLEI_URL=https://your-panel.example.com
 COLLEI_TOKEN=your_server_token
+# COLLEI_NAME=My Server  # 可选，服务器显示名称
 ```
 
 :::info
