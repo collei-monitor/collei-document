@@ -14,10 +14,10 @@ const config: Config = {
   },
 
   url: "https://collei-monitor.github.io",
-  baseUrl: "/",
+  baseUrl: "/collei-document/",
 
   organizationName: "collei-monitor",
-  projectName: "collei",
+  projectName: "collei-document",
 
   onBrokenLinks: "throw",
 

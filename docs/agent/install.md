@@ -60,7 +60,7 @@ bash install.sh \
 | `--no-auto-update`     | 禁用自动版本检查更新                             | 开启                                                             |
 | `--proxy-download`     | 通过面板代理下载二进制（无法访问 GitHub 时使用） | 关闭                                                             |
 | `--nic-whitelist <RE>` | 网卡白名单（逗号分隔正则）                       | —                                                                |
-| `--nic-blacklist <RE>` | 网卡黑名单（逗号分隔正则）                       | 内置默认，详细见[配置文件](./configuration.md####内置默认黑名单) |
+| `--nic-blacklist <RE>` | 网卡黑名单（逗号分隔正则）                       | 内置默认，详细见[配置文件](./configuration.md#内置默认黑名单) |
 | `--install-dir <DIR>`  | 二进制安装目录                                   | `/usr/local/bin`                                                 |
 | `--config-dir <DIR>`   | 配置文件目录                                     | `/etc/collei-agent`                                              |
 | `--version <VER>`      | 指定版本号（如 `v0.1.0`）                        | `latest`                                                         |
@@ -96,7 +96,7 @@ powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.c
 | `-NoAutoUpdate`   | 禁用自动版本检查更新                    | 开启                                                             |
 | `-ProxyDownload`  | 通过面板代理下载二进制                  | 关闭                                                             |
 | `-NicWhitelist`   | 网卡白名单（字符串数组，正则）          | —                                                                |
-| `-NicBlacklist`   | 网卡黑名单（字符串数组，正则）          | 内置默认，详细见[配置文件](./configuration.md####内置默认黑名单) |
+| `-NicBlacklist`   | 网卡黑名单（字符串数组，正则）          | 内置默认，详细见[配置文件](./configuration.md#内置默认黑名单) |
 | `-InstallDir`     | 安装目录                                | `C:\Program Files\collei-agent`                                  |
 | `-ConfigDir`      | 配置目录                                | `C:\ProgramData\collei-agent`                                    |
 | `-Version`        | 指定版本号                              | `latest`                                                         |
