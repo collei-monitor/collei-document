@@ -103,6 +103,7 @@ docker compose logs -f
 | `COLLEI_URL`       | 是     | 控制端 API 地址                  |
 | `COLLEI_REG_TOKEN` | 二选一 | 全局安装密钥（自动注册模式）     |
 | `COLLEI_TOKEN`     | 二选一 | 服务器专属 Token（被动注册模式） |
+| `COLLEI_NAME`      | 否     | 服务器显示名称                   |
 
 ---
 
@@ -115,9 +116,13 @@ services:
   collei-agent:
     image: ghcr.io/collei-monitor/collei-agent:latest
     # highlight-next-line
-    command: ["--name", "Docker Host 01", "--interval", "5"]
+    command: ["--interval", "5"]
     # ... 其余配置不变
 ```
+
+:::tip
+推荐通过环境变量配置（`COLLEI_URL`、`COLLEI_REG_TOKEN`、`COLLEI_NAME`），无需使用 `command` 覆盖。
+:::
 
 支持的参数与 CLI 一致，详见 [CLI 参数](./install.md#cli-参数)。
 

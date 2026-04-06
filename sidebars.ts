@@ -75,6 +75,17 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  devSidebar: [
+    {
+      type: 'category',
+      label: '开发',
+      collapsed: false,
+      items: [
+        'development/frontend',
+        // 'development/agent',
+      ],
+    },
+  ],
 };
 
 export default sidebars;

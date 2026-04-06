@@ -74,6 +74,12 @@ const config: Config = {
           label: "Agent",
         },
         {
+          type: "docSidebar",
+          sidebarId: "devSidebar",
+          position: "left",
+          label: "开发",
+        },
+        {
           href: "https://github.com/collei-monitor/collei",
           label: "GitHub",
           position: "right",
