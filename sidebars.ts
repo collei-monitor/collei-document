@@ -48,6 +48,33 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  deploySidebar: [
+    {
+      type: 'category',
+      label: '部署',
+      collapsed: false,
+      items: [
+        'deploy/quickstart',
+        'deploy/docker',
+        'deploy/bare-metal',
+        'deploy/build',
+        'deploy/upgrade',
+      ],
+    },
+  ],
+  agentSidebar: [
+    {
+      type: 'category',
+      label: 'Agent',
+      collapsed: false,
+      items: [
+        'agent/install',
+        'agent/docker',
+        'agent/configuration',
+        'agent/script-reference',
+      ],
+    },
+  ],
 };
 
 export default sidebars;

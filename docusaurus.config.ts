@@ -62,6 +62,18 @@ const config: Config = {
           label: "文档",
         },
         {
+          type: "docSidebar",
+          sidebarId: "deploySidebar",
+          position: "left",
+          label: "部署",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "agentSidebar",
+          position: "left",
+          label: "Agent",
+        },
+        {
           href: "https://github.com/collei-monitor/collei",
           label: "GitHub",
           position: "right",
